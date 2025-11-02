@@ -3,45 +3,35 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Conference ticket generator</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
   <!-- Form starts -->
   <form>
-    
-  </form>
-
-  Your Journey to Coding Conf 2025 Starts Here!
-
+  <h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
   Secure your spot at next year's biggest coding conference.
-
-  Upload Avatar
-  Drag and drop or click to upload
-  Upload your photo (JPG or PNG, max size: 500KB).
-
-  Full Name
-
-  Email Address
-  example@email.com
-
-  GitHub Username
-  @yourusername
-
-  Generate My Ticket
-
+  <div>
+    <label for="avatar-upload">Upload Avatar</label>
+    <img src="assets\images\icon-upload.svg" alt="Upload Icon">
+    <input type="file" id="avatar-upload" name="avatar-upload" accept=".jpeg ,.jpg,.png"  placeholder="Drag and drop or click to upload">
+  </div>
+    <div class="info-note">
+      <span class="icon">ⓘ</span>
+      <span>Upload your photo (JPG or PNG, max size: 500KB).</span>
+    </div>
+    <label for="full-name">Full Name</label>
+    <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+    <label for="email-address">Email Address</label>
+    <input type="email" id="email-address" name="email-address" placeholder="example@email.com">
+    <label for="github-username">Github Username/label>
+    <input id="github-username" name="github-username" placeholder="@yourusername">
+    <button type="submit">Generate My Ticket</button>
+  </form>
   <!-- Form ends -->
 
   <!-- Generated tickets starts -->
-
   Congrats, <!-- Full Name -->! Your ticket is ready.
 
   We've emailed your ticket to <!-- Email Address --> and will send updates in the run up to the event.
@@ -50,7 +40,6 @@
   Jan 31, 2025 / Austin, TX
 
   <!-- Generated tickets ends -->
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
