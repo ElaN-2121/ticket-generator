@@ -1,3 +1,1 @@
-Desktop: 1440px
-
 
